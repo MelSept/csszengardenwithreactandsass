@@ -1,0 +1,28 @@
+.v2 {
+
+    padding: 2em 12%;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.4);
+    background: #3e5d67;
+    background-image: url(../../assets/images/contours.png), url(../../assets/images/gridlines.png), url(../../assets/images/noise.png), url(../../assets/images/koi.jpg);
+    background-position: 0 0, -5px -25px, 0 0, 0 50%;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto, auto, auto, cover;
+    font-size: 2em;
+    font-style: italic;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: rgb(221, 214, 214);
+        font-style: normal;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }        
+    }   
+ }
+
+ 
+ 

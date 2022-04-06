@@ -1,0 +1,31 @@
+.intro {
+    padding-top: 130px;
+    padding-bottom: 50px;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 38%;
+    margin: 0;
+
+    .dmos a, .dmos a:visited {
+        padding: 10px;        
+        color: #809b7e;
+        font-family: 'Julius Sans One', sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+            color: #ffffff;
+            background-color: #0d8ba1;   
+            transition: 0.25s ;
+            text-decoration: none;
+            
+        }
+    }    
+    
+}
+
+
+
+
+
+ 

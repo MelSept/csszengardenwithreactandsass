@@ -1,5 +1,7 @@
+import styles from "./Requirements.module.scss";
+
 const Requirements = () => (
-  <div className="require" role="article">
+  <div className={styles.require} role="article">
     <h3>Requirements</h3>
     <p>
       Where possible, we would like to see mostly CSS 1 & 2 usage. CSS 3 & 4

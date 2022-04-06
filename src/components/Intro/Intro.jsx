@@ -1,5 +1,7 @@
+import styles from "./Intro.module.scss";
+
 const Intro = () => (
-  <section className="intro">
+  <section className={styles.intro}>
     <div className="dmos">
       <p>
         A demonstration of what can be accomplished through CSS based design.

@@ -1,5 +1,5 @@
 const Template = () => (
-  <div class="v2">
+  <div className="v2">
     <p>
       By <a href="http://www.mezzoblue.com/">Dave Shea</a>. Bandwidth graciously
       donated by <a href="http://www.mediatemple.net/">mediatemple</a>. Now

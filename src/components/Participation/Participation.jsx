@@ -1,6 +1,6 @@
 const Participation = () => (
-  <div class="verde">
-    <div class="part" role="article">
+  <div className="verde">
+    <div className="part" role="article">
       <h3>Participation</h3>
       <p>
         Strong visual design has always been our focus. You are modifying this
@@ -49,7 +49,7 @@ const Participation = () => (
         to use it we will download it and place it on our server.
       </p>
     </div>
-    <div class="benefits" role="article">
+    <div className="benefits" role="article">
       <h3>Benefits</h3>
       <p>
         Why participate? For recognition, inspiration, and a resource we can all

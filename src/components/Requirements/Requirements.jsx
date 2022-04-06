@@ -1,5 +1,5 @@
 const Requirements = () => (
-  <div class="require" role="article">
+  <div className="require" role="article">
     <h3>Requirements</h3>
     <p>
       Where possible, we would like to see mostly CSS 1 & 2 usage. CSS 3 & 4

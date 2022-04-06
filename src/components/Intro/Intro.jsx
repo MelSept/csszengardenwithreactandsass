@@ -1,6 +1,6 @@
 const Intro = () => (
-  <section class="intro">
-    <div class="dmos">
+  <section className="intro">
+    <div className="dmos">
       <p>
         A demonstration of what can be accomplished through CSS based design.
         Select any style sheet from the list to load it into this page.
@@ -12,7 +12,7 @@ const Intro = () => (
       </p>
     </div>
 
-    <div class="road" role="article">
+    <div className="road" role="article">
       <h3>The Road to Enlightenment</h3>
       <p>
         Littering a dark and dreary road lay the past relics of browser-specific
@@ -30,7 +30,7 @@ const Intro = () => (
         the web.
       </p>
     </div>
-    <div class="about" role="article">
+    <div className="about" role="article">
       <h3>So What is This About?</h3>
       <p>
         There is a continuing need to show the power of CSS. The Zen Garden aims

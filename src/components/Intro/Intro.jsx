@@ -2,7 +2,7 @@ import styles from "./Intro.module.scss";
 
 const Intro = () => (
   <section className={styles.intro}>
-    <div className="dmos">
+    <div className={styles.dmos}>
       <p>
         A demonstration of what can be accomplished through CSS based design.
         Select any style sheet from the list to load it into this page.
@@ -14,7 +14,7 @@ const Intro = () => (
       </p>
     </div>
 
-    <div className="road" role="article">
+    <div className={styles.road} role="article">
       <h3>The Road to Enlightenment</h3>
       <p>
         Littering a dark and dreary road lay the past relics of browser-specific
@@ -32,7 +32,7 @@ const Intro = () => (
         the web.
       </p>
     </div>
-    <div className="about" role="article">
+    <div className={styles.about} role="article">
       <h3>So What is This About?</h3>
       <p>
         There is a continuing need to show the power of CSS. The Zen Garden aims

@@ -1,8 +1,8 @@
 import styles from "./Header.module.scss";
 
 const Header = () => (
-  <header className={ styles.container}>
-    <div className="img-header">
+  <header className={styles.container}>
+    <div className={styles.imgHeader}>
       <h1>CSS Zen Garden</h1>
       <h2>The Beauty of CSS Design</h2>
     </div>

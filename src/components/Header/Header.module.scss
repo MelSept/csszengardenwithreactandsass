@@ -1,4 +1,5 @@
 .container {
+
     height: 230px;
     padding: 20px 0 70px 0;
     background: #2d6360;
@@ -6,13 +7,15 @@
     text-align: center;
     display: block;
 
-    .img-header {
+    .imgHeader {
         position: relative;
         width: 100%;
         height: 290px;
-        background: url(../../assets/images/contours.png), url(../../assets/images/noise.png), url(../../assets/images/gridlines.png),
-            url(../../assets/images/huntington.jpg) no-repeat;
-        background-size: auto, cover;
+        background-image: url(../../assets/images/contours.png), url(../../assets/images/noise.png), url(../../assets/images/gridlines.png),
+            url(../../assets/images/huntington.jpg);
+        background-size: auto, auto, auto, cover;
+        background-repeat: repeat, repeat, repeat, no-repeat;
+       
     }
 
     h1,

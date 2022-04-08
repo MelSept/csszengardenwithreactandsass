@@ -1,0 +1,26 @@
+footer {
+    clear: both;
+    padding: 3em 10%;
+    color: #fff;
+    background: #134347;
+    text-align: center;
+
+    .icon {        
+           
+        margin-left: 20px;
+        font-size: 70px;
+        line-height: 60px;
+        padding-left: 20px;
+
+        a {
+            margin-left: 80px;
+            color: #b6bebe;
+            text-decoration: none;
+            align-items: center;
+
+            &:hover {
+                color: #edf5f5;
+            }
+        }
+     }
+ }

@@ -1,7 +1,7 @@
 import styles from "./Participation.module.scss";
 
 const Participation = () => (
-  <div className={styles.verde}>
+  <div className={styles.green}>
     <div className={styles.part} role="article">
       <h3>Participation</h3>
       <p>

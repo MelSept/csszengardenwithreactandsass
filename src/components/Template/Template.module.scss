@@ -23,5 +23,15 @@
     }   
  }
 
- 
+ @media only screen and (max-width: 600px) {
+
+    .v2 {
+        padding:0;
+        font-size: 1.8em;
+    }
+    
+    p {
+        margin:0;
+    }
+ } 
  

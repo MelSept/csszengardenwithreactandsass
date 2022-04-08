@@ -175,3 +175,75 @@ li.viewall a {
         margin: 0;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .design {
+        position: relative;
+        top: 0;
+        font-size: 1em;
+        width: 100%;
+
+        li:nth-child(2n + 1) {
+            float: left;
+        }
+
+        li.viewall {
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 0 71px;
+            line-height: 50px;
+        }
+    }
+
+    .design,
+    .extras li {
+        
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+        line-height: 1.2em;
+    }
+
+    .viewAllDesings {
+        position: absolute;
+        top: 185px;
+        right: auto;
+        width: 100%;
+        height: 65px;
+        background: rgba(255, 255, 255, 0.2);
+
+        li.viewall {
+            width: 100%;
+            padding: 0 80px;
+        }
+    }
+
+    .extras {
+        position: relative;
+        top: 0;
+        width: 100%;
+        border-top: solid 1px #a0b9ad;
+        text-transform: uppercase;
+        background-color: rgba(138, 188, 159, 0.5);
+        background-image: url(../../assets/images/contours.png), url(../../assets/images/gridlines.png),
+            url(../../assets/images/bamboo.png);
+        background-repeat: repeat, repeat, no-repeat;
+        background-size: auto, auto, cover;
+
+        a {
+            font-size: 0.9em;
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0;
+        }
+    }
+}

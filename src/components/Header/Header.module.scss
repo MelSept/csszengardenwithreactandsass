@@ -1,5 +1,4 @@
 .container {
-
     height: 230px;
     padding: 20px 0 70px 0;
     background: #2d6360;
@@ -11,11 +10,10 @@
         position: relative;
         width: 100%;
         height: 290px;
-        background-image: url(../../assets/images/contours.png), url(../../assets/images/noise.png), url(../../assets/images/gridlines.png),
-            url(../../assets/images/huntington.jpg);
+        background-image: url(../../assets/images/contours.png), url(../../assets/images/noise.png),
+            url(../../assets/images/gridlines.png), url(../../assets/images/huntington.jpg);
         background-size: auto, auto, auto, cover;
         background-repeat: repeat, repeat, repeat, no-repeat;
-       
     }
 
     h1,
@@ -57,5 +55,39 @@
         font-size: 1.6em;
         font-style: italic;
         font-family: "Times New Roman", Times, serif;
+    }
+}
+
+/* Media querys */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        height: 250px;
+        padding-top: 0;
+        border-top: solid 10px rgba(19, 67, 71, 0.9);
+
+        .imgHeader {
+            height: 240px;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 1.6em;
+
+            &::before {
+                display: block;
+                left: 40%;
+                top: auto;
+                width: 15%;
+                height: 70px;
+            }
+        }
+
+        h2 {
+            padding: 0;
+            text-align: center;
+            font-size: 1.3em;
+        }
     }
 }

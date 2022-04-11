@@ -1,16 +1,18 @@
+@use "../../utils/styles/variables" as _variables;
+
 .sidebar {
-    background: #edf4f0;
+    background: _variables.$color-hover;
 
     h3 {
         display: none;
     }
 
     a {
-        color: #607476;
+        color: _variables.$color-aText;
         text-decoration: none;
 
         &:hover {
-            color: #49968e;
+            color: _variables.$color-links;
         }
     }
 
@@ -39,7 +41,7 @@
     background: transparent;
 
     .designerName {
-        color: #616857;
+        color: _variables.$color-intro;
         font-size: 0.8em;
         font-style: normal;
         font-family: "Libre Baskerville", serif;
@@ -56,7 +58,7 @@
         width: 100%;
         padding: 0.5em 10%;
         border-top: solid 1px #d9e3dc;
-        color: #c0cac3;
+        color: _variables.$color-icon;
 
         &:nth-child(2n + 1) {
             clear: left;
@@ -69,7 +71,7 @@
 li.viewall a {
     display: block;
     margin-bottom: 0.25em;
-    font-family: "Julius Sans One", sans-serif;
+    font-family: _variables.$font-julius;
     font-size: 1.2em;
     font-style: normal;
 }
@@ -83,11 +85,11 @@ li.viewall a {
     width: 26%;
     height: 70px;
     margin-right: 10px;
-    background: rgba(255, 255, 255, 0.2);
+    background: _variables.$color-view;
 
     a,
     a:visited {
-        color: rgba(255, 255, 255, 0.65);
+        color: _variables.$color-font;
 
         &::before {
             position: absolute;
@@ -156,7 +158,7 @@ li.viewall a {
 
 .extras {
     position: absolute;
-    top: 1500px;
+    top: 1400px;
     right: 0;
     width: 35%;
     background: transparent;
@@ -198,7 +200,6 @@ li.viewall a {
 
     .design,
     .extras li {
-        
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
@@ -213,7 +214,7 @@ li.viewall a {
         right: auto;
         width: 100%;
         height: 65px;
-        background: rgba(255, 255, 255, 0.2);
+        background: _variables.$color-view;
 
         li.viewall {
             width: 100%;
@@ -227,7 +228,83 @@ li.viewall a {
         width: 100%;
         border-top: solid 1px #a0b9ad;
         text-transform: uppercase;
-        background-color: rgba(138, 188, 159, 0.5);
+        background-color: _variables.$color-participation;
+        background-image: url(../../assets/images/contours.png), url(../../assets/images/gridlines.png),
+            url(../../assets/images/bamboo.png);
+        background-repeat: repeat, repeat, no-repeat;
+        background-size: auto, auto, cover;
+
+        a {
+            font-size: 0.9em;
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
+    .design {
+        position: relative;
+        top: 0;
+        font-size: 0.9em;
+        width: 100%;
+
+        li:nth-child(2n + 1) {
+            float: left;
+        }
+
+        li.viewall {
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 0 71px;
+            line-height: 50px;
+        }
+    }
+
+    .design,
+    .extras li {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+        line-height: 1.2em;
+    }
+
+    .viewAllDesings {
+        position: absolute;
+        top: 213px;
+        right: auto;
+        width: 100%;
+        background: _variables.$color-view;
+
+        .viewall a {
+            padding: 10px;
+            text-align: center;
+        }
+
+        li.viewall {
+            width: 85%;
+            padding: 12px 0 0 100px;
+        }
+    }
+
+    .extras {
+        position: relative;
+        top: 0;
+        width: 100%;
+        border-top: solid 1px #a0b9ad;
+        text-transform: uppercase;
+        background-color: _variables.$color-participation;
         background-image: url(../../assets/images/contours.png), url(../../assets/images/gridlines.png),
             url(../../assets/images/bamboo.png);
         background-repeat: repeat, repeat, no-repeat;

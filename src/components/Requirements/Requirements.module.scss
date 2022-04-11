@@ -1,28 +1,32 @@
-.require {         
+@use "../../utils/styles/variables" as _variables;
+@use "../../utils/styles/mixins" as _mixin;
+
+.require {
     width: 100%;
     padding-left: 10%;
     padding-right: 38%;
     padding-bottom: 50px;
     margin: 0;
 
-    a{
-        color:#1a9c96;
+    a {
+        color: _variables.$color-links;
         text-decoration: none;
 
-        &:hover{
-            color:#0d8ba1;
+        &:hover {
+            color: _variables.$color-hover-links;
             text-decoration: underline;
         }
-     } 
+    }
 }
 
 @media only screen and (max-width: 600px) {
-
     .require {
-        padding-top: 10px;
-        padding-right: 10%;
-        padding-bottom: 10px;
+        @include _mixin.introGreenParticipation();
     }
- }
+}
 
- 
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
+    .require {
+        @include _mixin.introGreenParticipationBig();
+    }
+}

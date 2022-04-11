@@ -1,9 +1,12 @@
+@use "../../utils/styles/variables" as _variables;
+
 .v2 {
     padding: 2em 12%;
     margin: 0;
-    color: rgba(255, 255, 255, 0.4);
-    background: #3e5d67;
-    background-image: url(../../assets/images/contours.png), url(../../assets/images/gridlines.png), url(../../assets/images/noise.png), url(../../assets/images/koi.jpg);
+    color: _variables.$color-font;
+    background: _variables.$color-template;
+    background-image: url(../../assets/images/contours.png), url(../../assets/images/gridlines.png),
+        url(../../assets/images/noise.png), url(../../assets/images/koi.jpg);
     background-position: 0 0, -5px -25px, 0 0, 0 50%;
     background-repeat: repeat, repeat, repeat, no-repeat;
     background-size: auto, auto, auto, cover;
@@ -13,25 +16,34 @@
 
     a {
         text-decoration: none;
-        color: rgb(221, 214, 214);
+        color: _variables.$color-icon;
         font-style: normal;
         cursor: pointer;
 
         &:hover {
             text-decoration: underline;
-        }        
-    }   
- }
+        }
+    }
+}
 
- @media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 600px) {
     .v2 {
-        padding:0;
+        padding: 0;
         font-size: 1.8em;
     }
-    
+
     p {
-        margin:0;
+        margin: 0;
     }
- } 
- 
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
+    .v2 {
+        padding: 0;
+        font-size: 1.8em;
+    }
+
+    p {
+        margin: 0;
+    }
+}

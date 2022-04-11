@@ -28,3 +28,15 @@ h3 {
         font-size: 1.2em;
     }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 1150px) {    
+    h3 {
+        margin-left: 53px;
+        font-size: 1.2em;
+    }
+
+    p {
+        padding: 1em 6%;
+        font-size: 1em;
+    }
+}

@@ -1,3 +1,6 @@
+@use "../../utils/styles/variables" as _variables;
+@use "../../utils/styles/mixins" as _mixin;
+
 .intro {
     padding-top: 100px;
     padding-bottom: 50px;
@@ -6,36 +9,31 @@
     padding-right: 38%;
     margin: 0;
 
-    .dmos a, .dmos a:visited {
-        padding: 10px;        
-        color: #809b7e;
-        font-family: 'Julius Sans One', sans-serif;
+    .dmos a,
+    .dmos a:visited {
+        padding: 10px;
+        color: _variables.$color-icon;
+        font-family: _variables.$font-julius;
         text-transform: uppercase;
         text-decoration: none;
 
         &:hover {
-            color: #ffffff;
-            background-color: #0d8ba1;   
-            transition: 0.25s ;
+            color: _variables.$color-font;
+            background-color: _variables.$color-hover-links;
+            transition: 0.25s;
             text-decoration: none;
-            
         }
-    }    
-    
+    }
 }
 
 @media only screen and (max-width: 600px) {
-
     .intro {
-        padding-top: 10px;
-        padding-right: 10%;
-        padding-bottom: 10px;
+       @include _mixin.introGreenParticipation();
     }
-
 }
 
-
-
-
-
- 
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
+    .intro {
+        @include _mixin.introGreenParticipationBig();
+    }
+}

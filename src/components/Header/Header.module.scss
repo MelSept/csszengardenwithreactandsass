@@ -1,7 +1,9 @@
+@use "../../utils/styles/variables" as _variables;
+
 .container {
     height: 230px;
     padding: 20px 0 70px 0;
-    background: #2d6360;
+    background: _variables.$color-container;
     background-attachment: fixed;
     text-align: center;
     display: block;
@@ -26,9 +28,9 @@
 
     h1 {
         border-bottom: none;
-        font-family: "Julius Sans One", sans-serif;
+        font-family: _variables.$font-julius;
         font-size: 3.2em;
-        color: #fff;
+        color: _variables.$color-font;
         text-transform: uppercase;
 
         &::before {
@@ -51,10 +53,10 @@
         padding-top: 5px;
         padding-bottom: 30px;
         border-top: none;
-        color: rgba(255, 255, 255, 0.582);
+        color: _variables.$color-icon;
         font-size: 1.6em;
         font-style: italic;
-        font-family: "Times New Roman", Times, serif;
+        font-family: _variables.$font-times;
     }
 }
 
@@ -91,3 +93,33 @@
         }
     }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
+    .container {
+        height: 250px;
+        padding-top: 0;
+        border-top: solid 10px rgba(19, 67, 71, 0.9);
+
+        .imgHeader {
+            height: 270px;
+        }
+
+        h1 {
+            font-size: 2em;
+            padding: 0px;
+            text-align: center;
+
+            &:before {                 
+                margin: 10px;
+            }
+        }
+
+        h2 {
+            padding: 0;
+            text-align: center;
+            font-size: 1.3em;
+            margin-left: 90px;
+        }
+    }
+}
+

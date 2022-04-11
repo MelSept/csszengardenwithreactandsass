@@ -1,3 +1,6 @@
+@use "../../utils/styles/variables" as _variables;
+@use "../../utils/styles/mixins" as _mixin;
+
 .green {
     width: 100%;
     padding-top: 25px;
@@ -6,18 +9,18 @@
     padding-right: 38%;
     margin: 0;
     background-attachment: scroll, scroll, fixed;
-    background-color: rgba(138,188,159,0.5);
+    background-color: _variables.$color-participation;
     background-image: url(../../assets/images/contours.png), url(../../assets/images/gridlines.png), url(../../assets/images/gridlines.png);
     background-repeat: repeat, repeat, no-repeat;
     background-size: auto, auto, cover;
 
     a {
-        color:#1a9c96;
+        color: _variables.$color-links;
         text-decoration: none;
     }
 
     &:hover {
-        color:#0d8ba1;
+        color: _variables.$color-hover-links;
         text-decoration: underline;
     }
  }
@@ -26,8 +29,12 @@
  @media only screen and (max-width: 600px) {
 
     .green {
-        padding-top: 10px;
-        padding-right: 10%;
-        padding-bottom: 10px;
+        @include _mixin.introGreenParticipation();
     }
  }
+
+ @media only screen and (min-width: 600px) and (max-width: 1150px) {
+    .green {
+        @include _mixin.introGreenParticipationBig();
+    }
+}
